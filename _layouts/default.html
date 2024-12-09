@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  </head>
+  <body class="m-auto max-w-xl bg-neutral-800 ">
+    {% include head.html %}
+  <div class="prose prose-xl dark:prose-invert">{{content}}</div>
+
+  <h2 class="mt-12 font-bold text-xl dark:text-neutral-50">Here's my most recent posts</h2>
+  <ul>
+  {% for post in site.posts %}
+    
+    <li class="list-disc text-base list-inside">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <time class="text-xs" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+        <a href="{{ post.url | prepend: site.baseurl }}">({{ post.date | date: "%B %-d, %Y" }})</a>
+      </time>
+    </li>
+  {% endfor %}
+    <li class="hidden only:block dark:text-neutral-50">
+No Posts yet
+    </li> 
+  </ul>
+  </body>
+</html>

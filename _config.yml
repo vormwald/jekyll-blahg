@@ -1,0 +1,50 @@
+destination: __site
+title: Cassidoo's blog template (in jekyll)
+tagline: A blog template for you!
+permalink: /post/:title/
+excerpt_separator: <!--more-->
+
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
+  trail:
+    before: 3 # The number of links before the current page
+    after: 3  # The number of links after the current page
+
+
+# jekyll-seo-tag configuration
+author: Mike Vormwald
+url: https://mikevormwald.com
+logo: /assets/images/profile.jpg
+social:
+  name: Mike Vormwald
+  links:
+    - https://twitter.com/vormwald
+    - https://www.facebook.com/mike.vormwald
+    - https://www.linkedin.com/in/mikevormwald
+    - https://github.com/vormwald
+
+google_site_verification:
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# to override the default setting.
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bin
+  - tailwind.config.js
