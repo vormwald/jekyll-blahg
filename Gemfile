@@ -13,6 +13,8 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
 end
 
+  gem 'tailwindcss-ruby', '4.0.0.beta.6'
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
