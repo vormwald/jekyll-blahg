@@ -1,7 +1,11 @@
-<nav class="my-4 text-sm md:text-base md:tracking-widest font-semibold font-mono dark:text-neutral-50">
-  <a href="/about"
-    class="pr-2 hover:underline decoration-2 underline-offset-4 hover:decoration-amber-500">about</a>
-  <a href="/posts" class="pr-2 hover:underline underline-offset-4 decoration-2 hover:decoration-rose-500">blog</a>
-  <a href="/github/vormwald"
-    class="hover:underline decoration-2  underline-offset-4  hover:decoration-indigo-400">github</a>
+<nav class="my-2 text-sm md:text-base md:tracking-widest font-semibold font-mono dark:text-neutral-50">
+  <a href="/"
+    class="pr-2 hover:underline decoration-2 underline-offset-4 text-stone-500 hover:decoration-amber-500 
+    {%- if page.url == '/' %} text-stone-800 dark:text-white underline decoration-amber-500{% endif %}">home</a>
+  <a href="/posts" 
+    class="pr-2 hover:underline underline-offset-2 decoration-2 text-stone-500 hover:decoration-rose-500
+    {%- if page.url contains '/post' %} text-stone-800 dark:text-white underline decoration-rose-500{% endif %}">posts</a>
+  <a href="/etc"
+    class="hover:underline decoration-2 underline-offset-4 text-stone-500 hover:decoration-indigo-400
+    {%- if page.url contains '/etc' %} text-stone-800 dark:text-white underline decoration-indigo-400{% endif %}">etc</a>
 </nav>

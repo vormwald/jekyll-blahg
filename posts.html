@@ -1,0 +1,21 @@
+---
+layout: default
+pagination:
+  enabled: true
+---
+
+
+  <ul>
+  {% for post in site.posts %}
+    <li class="text-base list-inside pb-8">
+    {% include post_link.html post=post %}
+    </li>
+  {% endfor %}
+    <li class="hidden only:block italic py-4 text-lg text-stone-500 dark:text-stone-50">
+      No Posts yet
+    </li> 
+  </ul>
+
+  <p class="font-normal text-lg text-center pb-4 text-stone-600 dark:text-stone-300">
+    You can also <a href="/rss.xml" class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>
+  </p>

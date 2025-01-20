@@ -10,8 +10,10 @@ pagination:
   sort_reverse: true
   trail:
     before: 3 # The number of links before the current page
-    after: 3  # The number of links after the current page
+    after: 3 # The number of links after the current page
 
+tag_page_layout: tag_page
+tag_page_dir: tags
 
 # jekyll-seo-tag configuration
 author: Mike Vormwald

@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: home
 ---
 
-Hi! I’m Cassidy, and I like to make memes and dreams and software.
+Welcome to this blog template by [cassidoo](https://cassidoo.co)! (Ported to Jekyll by [Mike Vormwald](https://github.com/vormwald))
 
-I’m the Senior Director of Developer Advocacy at GitHub! Outside of that fancy title, I’m a startup advisor and investor, 
-open source-er, and meme-maker on the internet. I enjoy building mechanical keyboards, playing music, hanging out with my 
-family and friends, and teaching in my free time.
+It’s using [Jekyll](https://jekyllrb.com/) and the [jekyll-tailwindcss](https://github.com/vormwald/jekyll-tailwindcss) plugin. No `node_modules/` folder required 🥳. You can clone it on GitHub to use it for yourself, and see how it works! I would love if you told me when you do use it, I love seeing variations on it!
 
-You should [subscribe to cassidy's newsletter!](https://cassidoo.co/newsletter)
+The tags at the bottom of the page are dynamically generated. The more tags you use, the more tags are added to the list! Posts are simple markdown files.
+
+You should also check out Cassidy's [newsletter](https://cassidoo.co/newsletter), her word game [Jumblie](https://jumblie.com), or her [GitHub profile](https://github.com/cassidoo).
+
+Enjoy!

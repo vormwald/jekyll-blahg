@@ -8,12 +8,13 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jekyll-tailwindcss" , path: "../jekyll-tailwindcss"
+  gem "jekyll-tailwindcss" #, path: "../jekyll-tailwindcss"
   gem "jemoji"
   gem "jekyll-paginate-v2"
+  gem "jekyll-tagging"
+  gem "tailwindcss-ruby", "~> 3.4.17"
 end
 
-gem "tailwindcss-ruby", "~> 3.4.17"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

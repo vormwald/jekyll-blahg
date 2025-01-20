@@ -1,9 +1,3 @@
-PATH
-  remote: ../jekyll-tailwindcss
-  specs:
-    jekyll-tailwindcss (0.5.0)
-      tailwindcss-ruby
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,6 +89,10 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagging (1.1.0)
+      nuggets
+    jekyll-tailwindcss (0.5.1)
+      tailwindcss-ruby
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.13.0)
@@ -124,6 +122,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.8-x86_64-linux)
       racc (~> 1.4)
+    nuggets (1.6.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -193,7 +192,8 @@ DEPENDENCIES
   jekyll-paginate-v2
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-tailwindcss!
+  jekyll-tagging
+  jekyll-tailwindcss
   jemoji
   tailwindcss-ruby (~> 3.4.17)
   tzinfo (~> 1.2)

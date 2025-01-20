@@ -1,0 +1,9 @@
+
+ 
+<h3 class="mt-10 text-center text-xl text-stone-500 dark:text-stone-300">View posts by tag</h3>
+
+<div class="mt-4 flex flex-wrap justify-center gap-5 ">
+  {% for tag in site.tags %}
+    {% include tag.html tag=tag.first %}
+  {% endfor %}
+</div>

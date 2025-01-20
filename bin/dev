@@ -1,0 +1,4 @@
+#!/bin/sh
+
+bundle exec jekyll serve --drafts --open-url --port 4000 --host 0.0.0.0 --livereload
+
