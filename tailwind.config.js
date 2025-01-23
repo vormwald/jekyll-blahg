@@ -64,7 +64,7 @@ module.exports = {
               fontWeight: "normal",
             },
             h2: {
-              color: theme("colors.gray.500"),
+              color: theme("colors.neutral.500"),
               fontSize: "1.65rem",
               marginTop: "1.5rem",
               marginBottom: "1.25rem",
