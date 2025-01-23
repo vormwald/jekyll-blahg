@@ -2,11 +2,158 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Typography customization */
+  --prose-body: var(--color-gray-600);
+  --prose-headings: var(--color-gray-800);
+  --prose-links: var(--color-gray-800);
+  --prose-links-hover: var(--color-gray-700);
+  --prose-underline: color-mix(in srgb, var(--color-gray-600) 20%, transparent);
+  --prose-underline-hover: var(--color-gray-700);
+  --prose-bold: var(--color-gray-900);
+  --prose-counters: var(--color-gray-900);
+  --prose-bullets: var(--color-gray-900);
+  --prose-hr: var(--color-gray-600);
+  --prose-quote-borders: var(--color-gray-400);
+  --prose-captions: var(--color-gray-400);
+  --prose-code: var(--color-gray-700);
+  --prose-code-bg: color-mix(in srgb, var(--color-gray-800) 20%, transparent);
+  --prose-pre-code: var(--color-gray-100);
+  --prose-pre-bg: var(--color-gray-900);
+  --prose-pre-border: var(--color-gray-300);
+  --prose-th-borders: none;
+  --prose-td-borders: none;
+
+  /* Dark mode typography */
+  --prose-invert-body: var(--color-gray-300);
+  --prose-invert-headings: var(--color-gray-300);
+  --prose-invert-links: white;
+  --prose-invert-links-hover: var(--color-gray-400);
+  --prose-invert-underline: color-mix(in srgb, var(--color-gray-400) 30%, transparent);
+  --prose-invert-underline-hover: var(--color-gray-400);
+  --prose-invert-bold: var(--color-gray-200);
+  --prose-invert-counters: var(--color-gray-200);
+  --prose-invert-bullets: var(--color-gray-200);
+  --prose-invert-hr: var(--color-gray-100);
+  --prose-invert-quote-borders: var(--color-gray-500);
+  --prose-invert-captions: var(--color-gray-500);
+  --prose-invert-code: var(--color-gray-300);
+  --prose-invert-code-bg: color-mix(in srgb, var(--color-gray-200) 5%, transparent);
+  --prose-invert-pre-code: var(--color-gray-100);
+  --prose-invert-pre-bg: rgb(0 0 0 / 0.4);
+  --prose-invert-pre-border: color-mix(in srgb, var(--color-gray-200) 10%, transparent);
+  --prose-invert-th-borders: none;
+  --prose-invert-td-borders: none;
+}
+
+/* Custom typography styles */
+@utility prose {
+  /* Headings */
+  & h1 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: normal;
+  }
+
+  & h2 {
+    color: var(--color-gray-500);
+    font-size: 1.65rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: normal;
+  }
+
+  & h3 {
+    color: var(--prose-body);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  & h4 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  & h5 {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  & h6 {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  /* Paragraphs and text elements */
+  & p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  & code::before,
+  & code::after {
+    content: none;
+  }
+
+  & code {
+    background-color: color-mix(in srgb, var(--color-gray-800) 20%, transparent);
+    padding: 0.1rem 0.2rem;
+  }
+
+  & strong {
+    font-weight: bold;
+  }
+
+  & pre {
+    border-radius: 0;
+  }
+
+  & li {
+    margin: 0.1rem 0;
+  }
+
+  & blockquote {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #3d3d3d;
+    quotes: none;
+  }
+
+  /* Tables */
+  & tbody tr {
+    border-bottom-width: 0;
+  }
+
+  & thead {
+    border-bottom: none;
+  }
+
+  & thead th,
+  & th {
+    text-align: center !important;
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+}
 
 /* GitHub-style task lists */
 
