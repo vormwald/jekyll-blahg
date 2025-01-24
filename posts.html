@@ -1,4 +1,5 @@
 ---
+title: Posts
 layout: default
 pagination:
   enabled: true
@@ -6,7 +7,7 @@ pagination:
 
 
   <ul>
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li class="text-base list-inside pb-8">
     {% include post_link.html post=post %}
     </li>
@@ -15,6 +16,22 @@ pagination:
       No Posts yet
     </li> 
   </ul>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="flex justify-center gap-4 py-6">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="px-4 py-2 rounded-lg bg-stone-200 dark:bg-stone-700 text-stone-700 dark:text-stone-200 hover:bg-stone-300 dark:hover:bg-stone-600 transition-colors">&laquo; Previous</a>
+    {% endif %}
+
+    <span class="px-4 py-2 text-stone-600 dark:text-stone-300">
+      Page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="px-4 py-2 rounded-lg bg-stone-200 dark:bg-stone-700 text-stone-700 dark:text-stone-200 hover:bg-stone-300 dark:hover:bg-stone-600 transition-colors">Next &raquo;</a>
+    {% endif %}
+  </div>
+  {% endif %}
 
   <p class="font-normal text-lg text-center pb-4 text-stone-600 dark:text-stone-300">
     You can also <a href="/rss.xml" class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>

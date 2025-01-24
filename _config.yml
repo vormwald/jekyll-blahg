@@ -16,15 +16,12 @@ tag_page_layout: tag_page
 tag_page_dir: tags
 
 # jekyll-seo-tag configuration
-author: Mike Vormwald
-url: https://mikevormwald.com
-logo: /assets/images/profile.jpg
+author: Jekyll Blahg
+url: https://jekyll-blahg.pages.dev
+logo: /assets/images/home-blog-card.png
 social:
-  name: Mike Vormwald
+  name: Jekyll Blahg
   links:
-    - https://twitter.com/vormwald
-    - https://www.facebook.com/mike.vormwald
-    - https://www.linkedin.com/in/mikevormwald
     - https://github.com/vormwald
 
 google_site_verification:
