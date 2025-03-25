@@ -4,6 +4,9 @@ tagline: A blog template for you!
 permalink: /post/:title/
 excerpt_separator: <!--more-->
 
+tailwindcss:
+  css_path: "./_data/tailwind.css"
+
 pagination:
   enabled: true
   per_page: 5

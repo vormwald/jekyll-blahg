@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/syntax-highlighting.css" | relative_url }}">
-  </head>
-  <body class="m-auto max-w-xl bg-stone-50 dark:bg-neutral-800 ">
-    {% include head.html %}
-    {{ content }}
-    {% include footer.html %}
+<html lang="{{ site.lang | default: " en-US" }}">
 
-    <script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax-highlighting.css" | relative_url }}">
+</head>
+
+<body class="m-auto max-w-2xl p-10 font-mono bg-neutral-200 dark:bg-neutral-800">
+  {% include head.html %}
+  {{ content }}
+  {% include footer.html %}
+
+  <script>
     let colors = ["#24d05a", "#eb4888", "#10a2f5", "#e9bc3f"];
 
     function getRandomColor() {
@@ -36,5 +38,6 @@
       setColorHoverListener();
     })();
   </script>
-  </body>
+</body>
+
 </html>

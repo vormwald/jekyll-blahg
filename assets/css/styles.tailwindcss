@@ -1,0 +1,13 @@
+---
+# The frontmatter here tells Jekyll to process this file and check for tailwind imports
+# set the path to the tailwindcss file 
+# are we using a theme gem? we'll want to add a @source directive to the top of the file
+# converter gem picks up the .tailwind file extension
+# checks config for the tailwind css file
+# if no config, it checks for a tailwind.css file under root folder
+# determines the relative path and adds it as an import
+# runs one or 2 lines through the CLI stdin 
+# was i too cute trying to get this to handle both v3 and v4?
+# v4 should be the default, and v3 should be an option but it should work with the legacy setup
+---
+

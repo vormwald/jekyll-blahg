@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<section id="post" class="container font-mono">
-  <h1 class="my-2 text-4xl font-light tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+<section id="post" class="container">
+  <h1 class="my-3 text-3xl font-light tracking-tight text-gray-900 dark:text-white sm:text-4xl">
     {{page.title}}
   </h1>
 
-  <div class="text-base italic font-extralight mt-1 text-gray-400 dark:text-gray-300">
+  <div class="text-base italic font-extralight mt-2 text-gray-600 dark:text-gray-400">
     <time datetime="{{page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
   </div>
 
@@ -15,7 +15,7 @@ layout: default
     {% include tag.html tag=tag %}
   {% endfor %}
 
-  <hr class=" text-xl h-1 mx-auto  md:my-4">
+  <hr class="h-1 mx-auto my-5 dark:border-white">
 
   {% if page.subtitle %}
   <p class="mt-2 font-semibold text-gray-600 dark:text-gray-300 text-lg italic leading-8">
@@ -23,9 +23,7 @@ layout: default
   </p>
   {% endif %}
 
-
   <div class="mt-4 prose font-extralight dark:prose-invert">{{ content }}</div>
-
 </section>
 
   {% include site_tags.html %}
