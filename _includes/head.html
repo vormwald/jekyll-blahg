@@ -1,13 +1,24 @@
-<main class="md:mt-18 text-xl px-0 mx-auto">
-  <div class="mt-14 font-mono mb-6 max-w-sm mx-auto">
-      <h1
-        class="text-3xl tracking-wider md:tracking-widest font-normal text-stone-700 dark:text-gray-50">
-        Cassidy's blog template (in jekyll)
-      </h1>
-      <h2
-        class="text-2xl md:leading-3 text-neutral-500 dark:text-neutral-400 pt-4">
-        A blog template for you!
-      </h2>
+<main class="md:mt-8 text-xl px-0 mx-auto">
+  {% assign avatar_url = site.avatar | default: null %}
+  <div class="mb-4 md:mb-10 md:grid md:grid-cols-6 items-center justify-center">
+    <div class="{% if avatar_url %}col-span-4{% else %}col-span-6{% endif %} max-w-sm mx-auto">
+        <h1
+          class="text-3xl tracking-wider md:tracking-widest font-normal text-stone-700 dark:text-gray-50">
+          Cassidy's blog template (in jekyll)
+        </h1>
+        <h2
+          class="text-2xl md:leading-3 text-neutral-500 dark:text-neutral-400 pt-4">
+          A blog template for you!
+        </h2>
+    </div>
+
+    {% if avatar_url %}
+    <div class="col-span-2 mt-4 md:mt-0">
+      <img class="block h-48 w-auto mx-auto rounded-full border-2 border-stone-300 drop-shadow-sm dark:border-gray-50 p-1" 
+        src="{{ avatar_url }}" 
+        alt="AI Generated image of a colorful, kind woman holding a keyboard" />
+    </div>
+    {% endif %}
   </div>
 
   <nav class="text-center mt-7 pb-4 text-base md:text-lg">

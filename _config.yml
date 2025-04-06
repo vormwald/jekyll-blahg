@@ -3,9 +3,10 @@ title: Cassidoo's blog template (in jekyll)
 tagline: A blog template for you!
 permalink: /post/:title/
 excerpt_separator: <!--more-->
+avatar: /assets/images/keyboard-woman.webp
 
 tailwindcss:
-  css_path: "./_data/tailwind.css"
+  css_path: "./_tailwind.css"
 
 pagination:
   enabled: true
@@ -25,7 +26,7 @@ logo: /assets/images/home-blog-card.png
 social:
   name: Jekyll Blahg
   links:
-    - https://github.com/vormwald
+    - https://github.com/vormwald/jekyll-blahg
 
 google_site_verification:
 
@@ -49,4 +50,4 @@ exclude:
   - Gemfile.lock
   - README.md
   - bin
-  - tailwind.config.js
+  - LICENSE

@@ -1,4 +1,25 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Simple colored output
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+echo -e "${GREEN}Starting Jekyll development server...${NC}"
+
+# Check dependencies first
+if ! bundle check; then
+  echo -e "${GREEN}Installing missing dependencies...${NC}"
+  bundle install
+  if [ $? -ne 0 ]; then
+    echo -e "${RED}Error: Failed to install dependencies${NC}"
+    exit 1
+  fi
+fi
+
+# If we get here, bundle check/install was successful
 bundle exec jekyll serve --drafts --open-url --port 4000 --host 0.0.0.0 --livereload
 
