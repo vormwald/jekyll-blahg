@@ -1,5 +1,7 @@
-PATH
-  remote: ../jekyll-tailwindcss
+GIT
+  remote: https://github.com/vormwald/jekyll-tailwindcss
+  revision: f4ca59f38a0404fbeac070927a7a931b41bf36bf
+  branch: process-dot-tailwind-files
   specs:
     jekyll-tailwindcss (0.6.2)
       tailwindcss-ruby
