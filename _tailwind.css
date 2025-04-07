@@ -1,64 +1,55 @@
 /*
  * This file is used to define the tailwindcss theme and typography styles.
- * It is imported into the assets/css/styles.css file to be included in the build.
+ * It is @imported into the assets/css/styles.css file, and its output is included in the build.
  */
+
+@import "tailwindcss";
 
 /* ia-writer-mono-latin-400-normal */
 @font-face {
-	font-family: "iA Writer Mono";
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2)
-			format("woff2"),
-		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff)
-			format("woff");
+  font-family: "iA Writer Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff) format("woff");
 }
 
 /* ia-writer-mono-latin-700-normal */
 @font-face {
-	font-family: "iA Writer Mono";
-	font-style: normal;
-	font-display: swap;
-	font-weight: 700;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2)
-			format("woff2"),
-		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff)
-			format("woff");
+  font-family: "iA Writer Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-normal.woff) format("woff");
 }
 
 /* ia-writer-mono-latin-400-italic */
 @font-face {
-	font-family: "iA Writer Mono";
-	font-style: italic;
-	font-display: swap;
-	font-weight: 400;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2)
-			format("woff2"),
-		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff)
-			format("woff");
+  font-family: "iA Writer Mono";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-italic.woff) format("woff");
 }
 
 /* ia-writer-mono-latin-700-italic */
 @font-face {
-	font-family: "iA Writer Mono";
-	font-style: italic;
-	font-display: swap;
-	font-weight: 700;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2)
-			format("woff2"),
-		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff)
-			format("woff");
+  font-family: "iA Writer Mono";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff2) format("woff2"),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-700-italic.woff) format("woff");
 }
-
-
-@import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
 
 @theme {
   --font-mono: 'iA Writer Mono', sans-serif;
-  
+
   /* Typography customization */
   --prose-body: var(--color-gray-600);
   --prose-headings: var(--color-gray-800);

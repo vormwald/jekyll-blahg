@@ -3,10 +3,10 @@ title: Cassidoo's blog template (in jekyll)
 tagline: A blog template for you!
 permalink: /post/:title/
 excerpt_separator: <!--more-->
-avatar: /assets/images/keyboard-woman.webp
+# avatar: /assets/images/profile_pic.jpg
 
 tailwindcss:
-  css_path: "./_tailwind.css"
+  css_path: "./_tailwind.css" # this is the default location
 
 pagination:
   enabled: true

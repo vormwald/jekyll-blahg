@@ -6,9 +6,9 @@ This is a Jekyll port of @cassidoo's blahg template (https://github.com/cassidoo
 
 ## Why does this exist?
 
-Recently I wrote up a tailwind CSS plugin for Jekyll that uses tailwindcss-ruby to manage versions, and wanted a demo site that could show off the various configuration options.
+Recently, I wrote up a tailwind CSS plugin for Jekyll that uses tailwindcss-ruby to manage versions, and wanted a demo site that could show off the various configuration options.
 
-I had a hard time finding modern, minimal, quirky designs for jekyll. Then I came across @cassidoo's blahg template, and thought it showed off a timeless blog design infused with some quirky colors.
+Eventually I came across @cassidoo's blahg template, and thought it showed off a timeless blog design infused with some fun.
 
 Currently it's built as a site template. Maybe I'll port it to a jekyll theme gem in the future.
 
@@ -23,7 +23,7 @@ Currently it's built as a site template. Maybe I'll port it to a jekyll theme ge
 
 I use cloudflare pages to deploy this site. It's super easy to set up.
 
-## Fun Fact
+## Important bits
 
 All that's needed to bring tailwindcss into this jekyll site is
 
@@ -34,14 +34,6 @@ group :jekyll_plugins do
 end
 ```
 
-and any CSS file with frontmatter and `@import "tailwindcss";`
+The Tailwind CSS file and definition file is `./_tailwind.css`. It will be processed by the Tailwind CLI and it's content will be put into any `*.tailwindcss` files in your repo. For example, see `assets/css/styles.tailwindcss`
 
-```css
----
-# frontmatter needed for jekyll processing
----
-
-@import "tailwindcss";
-```
-
-that's it. To learn more about tailwind configuration options, check their docs.
+To learn more about the gem head over to https://github.com/vormwald/jekyll-tailwindcss
