@@ -1,4 +1,4 @@
-destination: __site
+destination: _site
 title: Cassidoo's blog template (in jekyll)
 tagline: A blog template for you!
 permalink: /post/:title/
