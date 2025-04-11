@@ -12,6 +12,7 @@ Eventually I came across @cassidoo's blahg template, and thought it showed off a
 
 Currently it's built as a site template. Maybe I'll port it to a jekyll theme gem in the future.
 
+
 ## How to use it
 
 1. Clone the repo
@@ -21,7 +22,7 @@ Currently it's built as a site template. Maybe I'll port it to a jekyll theme ge
 
 ## How to deploy it
 
-I use cloudflare pages to deploy this site. It's super easy to set up.
+I use a github action. See: `.github/workflows/jekyll.yml`
 
 ## Important bits
 
@@ -37,3 +38,10 @@ end
 The Tailwind CSS file and definition file is `./_tailwind.css`. It will be processed by the Tailwind CLI and it's content will be put into any `*.tailwindcss` files in your repo. For example, see `assets/css/styles.tailwindcss`
 
 To learn more about the gem head over to https://github.com/vormwald/jekyll-tailwindcss
+
+### What If I want tailwind v3?
+
+See the `v3` branch, and how it includes:
+* ruby-tailwindcss pinned to a 3.4 version
+* tailwind.config.js with a setting in _config.yml
+* a CSS file with frontmatter that gets converted
