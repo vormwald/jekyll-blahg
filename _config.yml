@@ -3,6 +3,10 @@ title: Cassidoo's blog template (in jekyll)
 tagline: A blog template for you!
 permalink: /post/:title/
 excerpt_separator: <!--more-->
+# avatar: /assets/images/profile_pic.jpg
+
+tailwindcss:
+  config: "./tailwind.config.js"
 
 pagination:
   enabled: true
@@ -16,16 +20,13 @@ tag_page_layout: tag_page
 tag_page_dir: tags
 
 # jekyll-seo-tag configuration
-author: Mike Vormwald
-url: https://mikevormwald.com
-logo: /assets/images/profile.jpg
+author: Jekyll Blahg
+url: https://jekyll-blahg.pages.dev
+logo: /assets/images/home-blog-card.png
 social:
-  name: Mike Vormwald
+  name: Jekyll Blahg
   links:
-    - https://twitter.com/vormwald
-    - https://www.facebook.com/mike.vormwald
-    - https://www.linkedin.com/in/mikevormwald
-    - https://github.com/vormwald
+    - https://github.com/vormwald/jekyll-blahg
 
 google_site_verification:
 
@@ -49,4 +50,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - bin
+  - LICENSE
   - tailwind.config.js

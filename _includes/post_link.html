@@ -1,5 +1,5 @@
   {% assign post = include.post %}
-  <a class="underline decoration-2 underline-offset-2 text-2xl text-stone-600 dark:text-stone-200" 
+  <a class="underline decoration-2 underline-offset-2 text-xl text-stone-600 dark:text-stone-200" 
       href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <time class="text-md pl-1 text-stone-500 italic" datetime="{{ post.date | date: '%Y-%m-%d' }}">
     <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>

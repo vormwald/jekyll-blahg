@@ -1,28 +1,28 @@
 ---
 layout: default
-pagination:
-  enabled: true
 ---
 
-  <div class="prose prose-xl font-normal dark:prose-invert">
-    {{content}}
-  </div>
+<div class="prose prose-xl font-normal dark:prose-invert">
+  {{content}}
+</div>
 
-  <h2 class="mt-12 font-bold text-xl text-center pb-4 text-stone-500 dark:text-stone-300">
-    Here's my most recent posts 
-  </h2>
-  <ul>
+<h2 class="mt-12 pb-4 text-center text-xl font-bold text-stone-500 dark:text-stone-300">
+  Here's my most recent posts
+</h2>
+<ul>
   {% for post in site.posts limit:3 %}
-    <li class="text-base list-inside pb-8">
+  <li class="text-base list-inside pb-8">
     {% include post_link.html post=post %}
-    </li>
+  </li>
   {% endfor %}
-    <li class="hidden only:block italic py-4 text-lg text-neutral-400 dark:text-neutral-50">
-      No Posts yet
-    </li> 
-  </ul>
+  <li class="hidden only:block italic py-4 text-lg text-neutral-400 dark:text-neutral-50">
+    No Posts yet
+  </li>
+</ul>
 
-  <p class="font-normal text-lg text-center pb-4 text-stone-500 dark:text-stone-300">
-    You can also <a href="/rss.xml" class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>
-  </p>
-  {% include site_tags.html %}
+<p class="font-normal text-lg text-center pb-4 text-stone-500 dark:text-stone-300">
+  You can also <a href="/rss.xml"
+    class="underline decoration-2 underline-offset-2 text-stone-500 dark:text-stone-200">subscribe with RSS!</a>
+</p>
+
+{% include site_tags.html %}

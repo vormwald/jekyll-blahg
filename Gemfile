@@ -9,7 +9,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jekyll-tailwindcss"
+  gem "jekyll-tailwindcss", git: 'https://github.com/vormwald/jekyll-tailwindcss', branch: "process-dot-tailwind-files"
   gem "jemoji"
   gem "jekyll-paginate-v2"
   gem "jekyll-tagging"

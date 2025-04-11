@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/vormwald/jekyll-tailwindcss
+  revision: 26d01fe211e6c2b94b812a68a89b662dd4f25993
+  branch: process-dot-tailwind-files
+  specs:
+    jekyll-tailwindcss (0.6.2)
+      tailwindcss-ruby
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,8 +100,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-tagging (1.1.0)
       nuggets
-    jekyll-tailwindcss (0.5.1)
-      tailwindcss-ruby
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jemoji (0.13.0)
@@ -203,7 +209,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-tagging
-  jekyll-tailwindcss
+  jekyll-tailwindcss!
   jemoji
   tailwindcss-ruby (~> 3.4)
   tzinfo (~> 1.2)
