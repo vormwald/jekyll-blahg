@@ -15,7 +15,7 @@ group :jekyll_plugins do
   gem "jekyll-tagging"
 end
 
-gem "tailwindcss-ruby", "~> 4.0.9"
+gem "tailwindcss-ruby", "~> 4.1"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
